@@ -1,0 +1,5 @@
+{
+  "immutable": [
+    "src/main/resources/db/migration/"
+  ]
+}

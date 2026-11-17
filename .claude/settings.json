@@ -1,29 +1,40 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "extraKnownMarketplaces": {
+    "shop-harness": {
+      "source": {
+        "source": "github",
+        "repo": "koldovsky/shop-harness",
+        "ref": "v1.5.0"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "team-core@shop-harness": true,
+    "kotlin-service@shop-harness": true
+  },
   "permissions": {
     "deny": [
-      "Read(./.env)", "Read(./.env.*)", "Read(./secrets/**)",
-      "Bash(git push --force *)", "Bash(kubectl *)",
-      "PowerShell(git push --force *)", "PowerShell(kubectl *)"
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)",
+      "Bash(git push --force *)",
+      "Bash(kubectl *)",
+      "PowerShell(git push --force *)",
+      "PowerShell(kubectl *)"
     ],
     "ask": [
-      "Bash(git push *)", "PowerShell(git push *)",
+      "Bash(git push *)",
+      "PowerShell(git push *)",
       "Edit(./src/main/resources/db/migration/**)"
     ],
     "allow": [
-      "Bash(./gradlew test *)", "Bash(./gradlew build *)",
-      "PowerShell(./gradlew test *)", "PowerShell(./gradlew build *)",
-      "PowerShell(.\\gradlew.bat test *)", "PowerShell(.\\gradlew.bat build *)"
-    ]
-  },
-  "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "Edit|Write",
-        "hooks": [
-          { "type": "command", "command": "node", "args": ["${CLAUDE_PROJECT_DIR}/.claude/hooks/protect-paths.mjs"] }
-        ]
-      }
+      "Bash(./gradlew test *)",
+      "Bash(./gradlew build *)",
+      "PowerShell(./gradlew test *)",
+      "PowerShell(./gradlew build *)",
+      "PowerShell(.\\gradlew.bat test *)",
+      "PowerShell(.\\gradlew.bat build *)"
     ]
   }
 }

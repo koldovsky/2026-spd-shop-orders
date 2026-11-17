@@ -9,13 +9,14 @@ System overview, service map and contracts: the `shop-workspace` repo.
 - Run: `./gradlew bootRun` → :8081. `POST /orders` needs shop-pricing on :8082.
 
 ## Hard rules
-- Applied migrations in `src/main/resources/db/migration/` are immutable. Add a new `V<n>__<what>.sql`. (Enforced by a hook.)
+- Applied migrations in `src/main/resources/db/migration/` are immutable. Add a new `V<n>__<what>.sql`. (Enforced by the team-core `protect-paths` hook; paths in `.claude/protected-paths.json`.)
 - Money is `Long` cents and is priced only by shop-pricing. Never compute prices here.
 - `.env` and `secrets/` are off limits. (Enforced by permissions.)
+- API errors: the `api-errors` skill from shop-harness (team-core). No local copies — the drift check fails on them.
 
 ## Where things are
 - Business rules: `domain/` — no Spring Web, no JPA types.
-- Persistence, API and pricing adapters: `persistence/`, `api/`, `pricing/`. Path rules in `.claude/rules/` load when you touch them.
+- Persistence, API and pricing adapters: `persistence/`, `api/`, `pricing/`. Path rules in `.claude/rules/` load when you touch them; shared skills come from shop-harness.
 - Team agreement and autonomy matrix: `docs/ai/team-agreement.md`.
 
 ## Done means
