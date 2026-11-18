@@ -7,4 +7,4 @@ paths:
 
 - Errors are RFC 9457 problem details: 404 not found, 422 business rule violation, 400 malformed request. Never a 500 for validation.
 - Every endpoint has a MockMvc test in `src/test/kotlin/dev/shop/orders/api/` using `FakePricingClient`.
-- Breaking changes to a response shape need a note in shop-workspace `docs/contracts.md`.
+- Breaking changes to a response shape need a note in 2026-spd-shop-workspace `docs/contracts.md`.

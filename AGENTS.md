@@ -1,8 +1,8 @@
 <!-- owner: @koldovsky (orders team) · why: instructions every agent needs in every session · review-by: 2027-02-19 -->
-# shop-orders
+# 2026-spd-shop-orders
 
 Orders service of the Shop system. Kotlin + Spring Boot 4, Flyway, PostgreSQL (H2 in PostgreSQL mode locally).
-System overview, service map and contracts: the `shop-workspace` repo.
+System overview, service map and contracts: the `2026-spd-shop-workspace` repo.
 
 ## Commands
 - Test: `./gradlew test` (Windows: `gradlew.bat test`) — run before you say a task is done.

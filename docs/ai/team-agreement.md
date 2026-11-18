@@ -29,7 +29,7 @@ The person who opens the PR owns it, as if they wrote it. "The agent did it" is 
 ## 3. Harness owners
 
 - `AGENTS.md`, `.claude/**`, `docs/ai/**`: @koldovsky (see `.github/CODEOWNERS`).
-- Shared skills and hooks come from `shop-harness`; changes go there, not into copies here.
+- Shared skills and hooks come from `2026-spd-shop-harness`; changes go there, not into copies here.
 
 ## 4. How rules change
 
