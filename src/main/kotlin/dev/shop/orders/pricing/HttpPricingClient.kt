@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component
 import org.springframework.web.client.RestClient
 import org.springframework.web.client.body
 
-/** Calls shop-pricing: POST /quote → { "totalCents": 1234 }. Contract: shop-workspace/docs/contracts.md#pricing */
+/** Calls shop-pricing: POST /quote → { "totalCents": 1234 }. Contract: 2026-spd-shop-workspace/docs/contracts.md#pricing */
 @Component
 class HttpPricingClient(@Value("\${shop.pricing.base-url}") baseUrl: String) : PricingClient {
 
