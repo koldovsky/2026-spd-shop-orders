@@ -130,7 +130,7 @@ GET /orders?customerId=... — orders of a customer, newest first.
 POST /orders/{id}/cancel — cancel a NEW order.
 POST /orders/{id}/confirm — confirm a NEW order.
 
-The contract for shop-pricing is in the shop-workspace repo: docs/contracts.md#pricing.
+The contract for shop-pricing is in the 2026-spd-shop-workspace repo: docs/contracts.md#pricing.
 POST /quote — body: currency, lines [{sku, quantity}]. Returns { totalCents }.
 
 ## Deployment

@@ -1,4 +1,4 @@
-# shop-orders
+# 2026-spd-shop-orders
 
 Orders service of the demo **Shop** system used in the SPD «Team AI Engineering» workshop (Workshop 1).
 Kotlin + Spring Boot 4, PostgreSQL in compose, in-memory H2 locally (no Docker needed).
@@ -7,9 +7,9 @@ Kotlin + Spring Boot 4, PostgreSQL in compose, in-memory H2 locally (no Docker n
 |---|---|
 | Build and test | `./gradlew test` (Windows: `gradlew.bat test`) |
 | Run locally | `./gradlew bootRun` → http://localhost:8081 |
-| Needs | JDK 21; `shop-pricing` on :8082 only for `POST /orders` |
+| Needs | JDK 21; `2026-spd-shop-pricing` on :8082 only for `POST /orders` |
 
-Related repos: `shop-workspace` (system overview, contracts, compose), `shop-pricing`, `shop-web`, `shop-harness` (shared agent harness).
+Related repos: `2026-spd-shop-workspace` (system overview, contracts, compose), `2026-spd-shop-pricing`, `2026-spd-shop-web`, `2026-spd-shop-harness` (shared agent harness).
 
 ## Branches
 
